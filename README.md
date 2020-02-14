@@ -43,7 +43,7 @@ Connect to a remote repository:-
         
         or
         
-        git remote set-url origin https://github.com/github/ReactiveCocoa.git
+        git remote set-url origin https://github.com/your_user_name/your_github_repo_link
 
 
 push your repo on github:-
