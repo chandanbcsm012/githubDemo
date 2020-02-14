@@ -40,6 +40,10 @@ Git check file status( if green file is added or if red not added to git):-
 Connect to a remote repository:-
 
         git remote add origin https://github.com/your_user_name/your_github_repo_link
+        
+        or
+        
+        git remote set-url origin https://github.com/github/ReactiveCocoa.git
 
 
 push your repo on github:-
