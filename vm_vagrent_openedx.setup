@@ -1,0 +1,58 @@
+#update your system
+	sudo apt-get update
+#install virtualbox
+	sudo apt-get install virtualbox
+	vboxmanage --version 
+	##wget -c https://releases.hashicorp.com/vagrant/2.0.3/vagrant_2.0.3_x86_64.deb
+	##sudo dpkg -i vagrant_2.0.3_x86_64.deb
+	#sudo apt-get install virtualbox-5.1
+	#systemctl status vboxdrv
+#install vagrant & check version
+	sudo apt-get install vagrant
+	vagrant --version
+#create directory & chandan to store Virtual Machine
+	sudo mkdir ~/vagrant-ubuntu
+	cd vagrant-ubuntu/
+#Download and install your operating system (Vagrant Box) of choice ("hashicorp/bionic64 or ubuntu/bionic64 or ubuntu/trusty64").
+	sudo vagrant init ubuntu/trusty64
+#create and configure the virtual machine according to the Vagrantfile with:
+	sudo vagrant up
+#To connect to the virtual machine by SSH:
+	sudo vagrant ssh
+
+##Other Vagrant Commands:
+----------------------
+#To stop the virtual machine use:
+	sudo vagrant halt
+#To delete the virtual machine, use the command:
+	sudo vagrant destroy
+#To manually create a Vagrantfile type:
+	touch vagrantfile
+#Uninstall vagrant:
+	sudo apt-get remove vagrant
+#Uninstall vagrant and it's dependent packages
+	sudo apt-get autoremove vagrant
+#Purging vagrant
+	sudo apt-get purge vagrant
+	sudo apt-get autoremove --purge vagrant
+===================================================================================
+export OPENEDX_RELEASE="open-release/ginkgo.master"
+
+===================================================================================
+#List all available virtual machines
+	VBoxManage list vms
+
+#List all running available virtual machines
+	VBoxManage list runningvms
+=================================================
+sudo apt-get remove --purge virtualbox* 
+sudo rm ~/"VirtualBox VMs" -Rf
+sudo rm ~/.config/VirtualBox/ -Rf
+=======================================================================================================
+curl -OJL https://s3.amazonaws.com/edx-static/vagrant-images/eucalyptus-devstack-2016-08-19.box?torrent
+===================================================================================
+Vagrant Command-Line Interface => https://www.vagrantup.com/docs/cli
+
+
+
+
